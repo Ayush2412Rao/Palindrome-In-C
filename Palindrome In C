@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+int main()
+{
+	int a,b,c,rev=0;
+	printf("Enter the no. to get it's reverse:");
+	scanf("%d",&a);
+	c=a;
+	while(a>0)
+	{
+		b=a%10;
+		rev=(rev*10)+b;
+		a=a/10;
+	}
+	printf("Reverse of %d is %d",c,rev);
+	if(rev==c)
+	{
+		printf("\nYes it's a Palindrome");
+	}
+	else
+	{
+		printf("\nNo it's not a Palindrome");
+	}
+	return 0;
+}
